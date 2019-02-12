@@ -21,7 +21,8 @@ public class RepoService {
             public JSONArray call() throws Exception {
                 Request request = RequestGenerator.get(AppAPI.CLOSED_REQUEST + orgName + AppAPI.SLASH + repoName + AppAPI.CLOSED_STATE);
                 String body = RequestHandler.makeRequestAndValidate(request);
-                JSONArray jsonArray = Utility.getResultJSONArray(body);
+                JSONArray jsonArray = null;
+//                = Utility.getResultJSONArray(body);
                 return jsonArray;
             }
         });
@@ -33,7 +34,8 @@ public class RepoService {
             public JSONArray call() throws Exception {
                 Request request = RequestGenerator.get(AppAPI.OPEN_REQUEST + orgName+ AppAPI.SLASH + repoName + AppAPI.OPEN_STATE);
                 String body = RequestHandler.makeRequestAndValidate(request);
-                JSONArray jsonArray = Utility.getResultJSONArray(body);
+                JSONArray jsonArray = null;
+//                        Utility.getResultJSONArray(body);
                 return jsonArray;
             }
         });

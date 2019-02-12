@@ -58,7 +58,7 @@ public class RepoDetail {
     @ColumnInfo(name = "body")
     private String body;
 
-//    protected RepoDetail(Parcel in) {
+//    protected NewsFeed(Parcel in) {
 //        if (in.readByte() == 0) {
 //            id = null;
 //        } else {
@@ -89,15 +89,15 @@ public class RepoDetail {
 //        body = in.readString();
 //    }
 //
-//    public static final Creator<RepoDetail> CREATOR = new Creator<RepoDetail>() {
+//    public static final Creator<NewsFeed> CREATOR = new Creator<NewsFeed>() {
 //        @Override
-//        public RepoDetail createFromParcel(Parcel in) {
-//            return new RepoDetail(in);
+//        public NewsFeed createFromParcel(Parcel in) {
+//            return new NewsFeed(in);
 //        }
 //
 //        @Override
-//        public RepoDetail[] newArray(int size) {
-//            return new RepoDetail[size];
+//        public NewsFeed[] newArray(int size) {
+//            return new NewsFeed[size];
 //        }
 //    };
 
@@ -332,7 +332,7 @@ public class RepoDetail {
 //    }
 //
 //    @Override
-//    public int compareTo(RepoDetail o) {
+//    public int compareTo(NewsFeed o) {
 //        return 0;
 //    }
 }

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.aditya.livefeeder.R;
-import com.aditya.livefeeder.modal.RepoDetail;
+import com.aditya.livefeeder.modal.NewsFeed;
 import com.aditya.livefeeder.utils.StringUtils;
 
 import java.util.List;
@@ -15,12 +15,12 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class PullRequestAdapter extends RecyclerView.Adapter<PullRequestAdapter.PullRequestViewHolder>{
+public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.PullRequestViewHolder>{
 
     private Context context;
-    private List<RepoDetail> connections;
+    private List<NewsFeed> connections;
 
-    public PullRequestAdapter(@NonNull Context context, @NonNull List<RepoDetail> connections){
+    public NewsFeedAdapter(@NonNull Context context, @NonNull List<NewsFeed> connections){
         this.context=context;
         this.connections=connections;
     }
@@ -33,23 +33,20 @@ public class PullRequestAdapter extends RecyclerView.Adapter<PullRequestAdapter.
 
     @Override
     public void onBindViewHolder(PullRequestViewHolder holder, int position) {
-        final RepoDetail pullRequest=connections.get(position);
+        final NewsFeed pullRequest=connections.get(position);
         if(pullRequest!=null){
             if(StringUtils.isNotEmptyOrNull(pullRequest.getTitle())){
                 holder.repoTitle.setText(pullRequest.getTitle());
             }
-            if(StringUtils.isNotEmptyOrNull(pullRequest.getCreated_at())){
-                holder.createdAt.setText("Created At: "+pullRequest.getCreated_at());
+            if(StringUtils.isNotEmptyOrNull(pullRequest.getImageURL())){
+                holder.createdAt.setText(pullRequest.getImageURL());
             }
-            if(pullRequest.getNumber()!=-1){
-                holder.prNumber.setText("PR Number: "+pullRequest.getNumber());
-            }
-            if(pullRequest.getUser()!=null&&StringUtils.isNotEmptyOrNull(pullRequest.getUser().getLogin())){
-                holder.userName.setText("User: "+pullRequest.getUser().getLogin());
-            }
-            if(pullRequest.getPull_request()!=null) {
-                holder.repoURL.setText("Patch URL => " + pullRequest.getPull_request().getPatch_url());
-            }
+//            if(pullRequest.getUser()!=null&&StringUtils.isNotEmptyOrNull(pullRequest.getUser().getLogin())){
+//                holder.userName.setText("User: "+pullRequest.getUser().getLogin());
+//            }
+//            if(pullRequest.getPull_request()!=null) {
+//                holder.repoURL.setText("Patch URL => " + pullRequest.getPull_request().getPatch_url());
+//            }
 //            if(pullRequest.getPull_request()!=null&&StringUtils.isNotEmptyOrNull(pullRequest.getPull_request().getPatch_url())){
 //                holder.repoURL.setText("Patch URL => "+pullRequest.getPull_request().getPatch_url());
 //            }
