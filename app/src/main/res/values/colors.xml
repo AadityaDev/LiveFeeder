@@ -3,4 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="player_play_button_background">#80000000</color>
+    <color name="player_pause_button_background">#445454</color>
+    <color name="buffered">#80000000</color>
+    <color name="played">#80000000</color>
+    <color name="scrubber">#80000000</color>
+    <color name="unplayed">#80000000</color>
 </resources>

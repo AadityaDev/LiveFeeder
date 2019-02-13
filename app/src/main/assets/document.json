@@ -1,0 +1,28 @@
+{
+  "app": {
+    "designFiles": [
+      {
+        "name": "activity_feed_detail",
+        "version": "1.0.0"
+      },
+      {
+        "name": "activity_main",
+        "version": "1.0.0"
+      },
+      {
+        "name": "feed_card",
+        "version": "1.0.0"
+      }
+    ],
+    "activityFiles": [
+      {
+        "name": "FeedDetail",
+        "version": "1.0.0"
+      },
+      {
+        "name": "MainActivity",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

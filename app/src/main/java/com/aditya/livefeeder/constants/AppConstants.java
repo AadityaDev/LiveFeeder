@@ -2,7 +2,7 @@ package com.aditya.livefeeder.constants;
 
 public class AppConstants {
 
-    public static final String SOMETHING_WENT_WRONG = "Something went wrong at server";
+    public static final String SOMETHING_WENT_WRONG = "Video can't be played now!";
     public static final String NO_NETWORK_CONNECTION = "No network connection";
     public static final String UNAUTHORIZED_ACCESS = "Unauthorized access. Please sign in again.";
     public static final String MESSAGE_RESOURCE_NOT_FOUND = "Requested resource does not exist. Please try again.";
@@ -13,7 +13,7 @@ public class AppConstants {
 
     public static final String BAD_REQUEST = "Bad request. Try again later";
     public static final String ORG_NAME = "organizationName";
-    public static final String REPO_NAME = "repoName";
+    public static final String FEED_BUNDLE = "feedBundle";
 
     public static class NotificationConstant {
         //generic constants
